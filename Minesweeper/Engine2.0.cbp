@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Engine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Engine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="ps" />
+					<Add directory="gui" />
+					<Add directory="resources" />
+					<Add directory="math" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="resources" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-lSDL2" />
+					<Add option="-lpthread" />
+					<Add option="-lSDL2_image" />
+					<Add option="-lSDL2_ttf" />
+					<Add option="-lboost_system" />
+					<Add option="-lboost_thread" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Engine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Game/Mine.cpp" />
+		<Unit filename="Game/Mine.h" />
+		<Unit filename="Game/MineField.cpp" />
+		<Unit filename="Game/MineField.h" />
+		<Unit filename="Game/Tile.cpp" />
+		<Unit filename="Game/Tile.h" />
+		<Unit filename="engine/Engine.cpp" />
+		<Unit filename="engine/Engine.h" />
+		<Unit filename="gui/Button.cpp" />
+		<Unit filename="gui/Button.h" />
+		<Unit filename="gui/GUI.h" />
+		<Unit filename="gui/GUIEvent.cpp" />
+		<Unit filename="gui/GUIEvent.h" />
+		<Unit filename="gui/GUISprite.cpp" />
+		<Unit filename="gui/GUISprite.h" />
+		<Unit filename="gui/GUIWindow.cpp" />
+		<Unit filename="gui/GUIWindow.h" />
+		<Unit filename="gui/GUItypes.h" />
+		<Unit filename="gui/GUIwindow_events.cpp" />
+		<Unit filename="gui/Text.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="math/GolMath.cpp" />
+		<Unit filename="math/GolMath.h" />
+		<Unit filename="ps/Color.h" />
+		<Unit filename="ps/Mouse.h" />
+		<Unit filename="ps/Point.cpp" />
+		<Unit filename="ps/Point.h" />
+		<Unit filename="ps/Rect.cpp" />
+		<Unit filename="ps/Rect.h" />
+		<Unit filename="ps/SDL/load_res.cpp" />
+		<Unit filename="ps/SDL/load_res.h" />
+		<Unit filename="ps/Str.h" />
+		<Unit filename="ps/precompiled.h" />
+		<Unit filename="ps/types.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
